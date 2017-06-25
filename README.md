@@ -1,6 +1,6 @@
 # safe Commander.js
 
-Commander.js have a major design flaw in 'option' API. Add options like: name, opts, command, option collide with commander instance. See issues: 
+Commander.js have a major design flaw in 'option' API, adding options like: name, opts, command, option collide with commander instance. See issues: 
 
 safe-commander solved the collition problem but break API.
 
