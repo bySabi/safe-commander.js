@@ -1,6 +1,6 @@
 {
   "name": "safe-commander",
-  "version": "2.10.2",
+  "version": "2.10.3",
   "description": "the complete solution for node.js command-line programs",
   "keywords": [
     "safe",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bySabi/safe-commander.git"
+    "url": "git+https://github.com/bySabi/safe-commander.js.git"
   },
   "bugs": {
-    "url": "https://github.com/bySabi/safe-commander/issues"
+    "url": "https://github.com/bySabi/safe-commander.js/issues"
   },
-  "homepage": "https://github.com/bySabi/safe-commander#readme",
+  "homepage": "https://github.com/bySabi/safe-commander.js#readme",
   "author": "bySabi Files",
   "license": "MIT"
 }
