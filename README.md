@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/safe-commander.svg)](https://badge.fury.io/js/npmclean)
 [![npm downloads](https://img.shields.io/npm/dm/safe-commander.svg?style=flat-square)](https://www.npmjs.com/package/safe-commander)
 
-  [Commander.js](https://github.com/tj/commander.js/) have a major design flaw in 'option' API, adding options like: `name`, `opts`, `command`, `option` collide with commander instance. See issues: [#404](https://github.com/tj/commander.js/issues/404), [#584](https://github.com/tj/commander.js/issues/584), [#648](https://github.com/tj/commander.js/issues/648)
+  [Commander.js](https://github.com/tj/commander.js/) have a major design flaw in `option` API, adding options like: `name`, `opts`, `command`, `option` collide with commander instance. See issues: [#404](https://github.com/tj/commander.js/issues/404), [#584](https://github.com/tj/commander.js/issues/584), [#648](https://github.com/tj/commander.js/issues/648)
 
 > `safe-commander` solves collision problem but with **breaking changes**.
 
