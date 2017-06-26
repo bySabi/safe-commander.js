@@ -50,7 +50,7 @@ become to, with `safe-commander`:
  * Module dependencies.
  */
 
-var program = require('commander');
+var program = require('safe-commander');   // safe-commander
 
 program
   .version('0.1.0')
