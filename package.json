@@ -1,0 +1,22 @@
+{
+  "name": "safe-commander",
+  "version": "2.10.0",
+  "description": "the complete solution for node.js command-line programs",
+  "keywords": [
+    "safe",
+    "safe-commander",
+    "commander",
+    "command",
+    "option",
+    "parser"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.6.x"
+  },
+  "dependencies": {
+    "commander": "^2.10.0"
+  },
+  "author": "bySabi Files",
+  "license": "MIT"
+}
