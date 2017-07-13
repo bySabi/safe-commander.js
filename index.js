@@ -3,25 +3,6 @@
 var UnsafeCommand = require('commander').Command;
 var Option = require('commander').Option;
 
-/**
- * Expose the root command.
- */
-
-exports = module.exports = new Command();
-
-/**
- * Expose `Command`.
- */
-
-exports.Command = Command;
-
-/**
- * Expose `Option`.
- */
-
-exports.Option = Option;
-
-
 function Command(name) {
   UnsafeCommand.call(this, name);
   this.optsObj = {}; // options Store
@@ -119,9 +100,26 @@ Command.prototype.opts = function() {
  * @return {String}
  * @api private
  */
-
 function camelcase(flag) {
   return flag.split('-').reduce(function(str, word) {
     return str + word[0].toUpperCase() + word.slice(1);
   });
 }
+
+/**
+ * Expose the root command.
+ */
+
+exports = module.exports = new Command();
+
+/**
+ * Expose `Command`.
+ */
+
+exports.Command = Command;
+
+/**
+ * Expose `Option`.
+ */
+
+exports.Option = Option;

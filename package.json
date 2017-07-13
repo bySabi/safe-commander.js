@@ -1,6 +1,6 @@
 {
   "name": "safe-commander",
-  "version": "2.10.4",
+  "version": "2.11.0",
   "description": "the complete solution for node.js command-line programs",
   "keywords": [
     "safe",
@@ -15,7 +15,7 @@
     "node": ">= 0.6.x"
   },
   "dependencies": {
-    "commander": "^2.10.0"
+    "commander": "^2.11.0"
   },
   "repository": {
     "type": "git",
