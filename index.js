@@ -51,7 +51,7 @@ Command.prototype.option = function(flags, description, fn, defaultValue) {
 
   // when it's passed assign the value
   // and conditionally invoke the callback
-  this.on(oname, function(val) {
+  this.on('option:' + oname, function(val) {
     // coercion
     if (null !== val && fn) val = fn(val, undefined === self[name]
       ? defaultValue
