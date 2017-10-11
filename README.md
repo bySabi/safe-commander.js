@@ -16,7 +16,7 @@ Follow Commander [API documentation](http://tj.github.com/commander.js/)
 ## Breaking changes
 Options created with `option` API will no longer be available on the Commander instance object.  Instead, a new object store `optsObj` was added.
 
-The original `Commander.js` example should be modified as follows:
+The original [Commander.js](https://github.com/tj/commander.js/#option-parsing) example should be modified as follows:
 
 ```diff
  #!/usr/bin/env node
