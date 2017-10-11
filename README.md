@@ -47,6 +47,15 @@ The original `Commander.js` example should be modified as follows:
 +console.log('  - %s cheese', program.optsObj.cheese);
 ```
 
+## Credits
+
+### author
+* [@bySabi](https://github.com/bySabi)
+
+### contributors
+* Ildar Sagdejev <> [@specious](https://github.com/specious)
+
+
 ## Contributing
 
 * Improve the documentation
