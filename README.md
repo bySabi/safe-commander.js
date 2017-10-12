@@ -14,7 +14,7 @@
 Follow Commander [API documentation](http://tj.github.com/commander.js/)
 
 ## Breaking changes
-Options created with `option` API will no longer be available on the Commander instance object.  Instead, a new object store `optsObj` was added.
+Options created with `option` API will no longer be available on the Commander instance object.  Instead, a new object store `safeOpts` was added.
 
 The original [Commander.js](https://github.com/tj/commander.js/#option-parsing) example should be modified as follows:
 
@@ -41,10 +41,10 @@ The original [Commander.js](https://github.com/tj/commander.js/#option-parsing) 
 -if (program.pineapple) console.log('  - pineapple');
 -if (program.bbqSauce) console.log('  - bbq');
 -console.log('  - %s cheese', program.cheese);
-+if (program.optsObj.peppers) console.log('  - peppers');
-+if (program.optsObj.pineapple) console.log('  - pineapple');
-+if (program.optsObj.bbqSauce) console.log('  - bbq');
-+console.log('  - %s cheese', program.optsObj.cheese);
++if (program.safeOpts.peppers) console.log('  - peppers');
++if (program.safeOpts.pineapple) console.log('  - pineapple');
++if (program.safeOpts.bbqSauce) console.log('  - bbq');
++console.log('  - %s cheese', program.safeOpts.cheese);
 ```
 
 ## Credits

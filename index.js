@@ -5,7 +5,7 @@ var Option = require('commander').Option;
 
 function Command(name) {
   UnsafeCommand.call(this, name);
-  this.optsObj = {}; // options Store
+  this.safeOpts = {}; // options Store
 }
 
 Command.prototype = Object.create(UnsafeCommand.prototype, {
@@ -18,7 +18,7 @@ Command.prototype = Object.create(UnsafeCommand.prototype, {
 });
 
 Command.prototype.option = function(flags, description, fn, defaultValue) {
-  var self = this.optsObj
+  var self = this.safeOpts
     , option = new Option(flags, description)
     , oname = option.name()
     , name = camelcase(oname);
@@ -88,7 +88,7 @@ Command.prototype.opts = function() {
 
   for (var i = 0 ; i < len; i++) {
     var key = camelcase(this.options[i].name());
-    result[key] = key === 'version' ? this._version : this.optsObj[key];
+    result[key] = key === 'version' ? this._version : this.safeOpts[key];
   }
   return result;
 };
